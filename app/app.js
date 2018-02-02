@@ -9,7 +9,7 @@ var multiplyButton = document.getElementById{"multiplybutton"}
 var divideButton = document.getElementById{"dividebutton"}
 var nineButton = document.getElementById{"ninebutton"}
 var eightButton = document.getElementById{"eightbutton"}
-var sevenButton = document.getElementById{“sevenbutton"}
+var sevenButton = document.getElementById{“sevenbutton}
 var sixButton = document.getElementById{"sixbutton"}
 var fiveButton = document.getElementById{"fivebutton"}
 var fourButton = document.getElementById{"fourbutton"}
@@ -21,4 +21,22 @@ addButton.addEventListener("click", add())
 subtractButton.subtractEventListener("click", subtract())
 multiplyButton.multiplyEventListener("click", multiply())
 divideButton.divideEventListener("click", divide())
-
+nineButton.subtractEventListener("click", function(){display.innerHTML += 9})
+subtractButton.subtractEventListener("click", subtract())
+nineButton.subtractEventListener("click", function(){display.innerHTML += 8})
+subtractButton.subtractEventListener("click", subtract())
+nineButton.subtractEventListener("click", function(){display.innerHTML += 7})
+subtractButton.subtractEventListener("click", subtract())
+nineButton.subtractEventListener("click", function(){display.innerHTML += 6})
+subtractButton.subtractEventListener("click", subtract())
+nineButton.subtractEventListener("click", function(){display.innerHTML += 5})
+subtractButton.subtractEventListener("click", subtract())
+nineButton.subtractEventListener("click", function(){display.innerHTML += 4})
+subtractButton.subtractEventListener("click", subtract())
+nineButton.subtractEventListener("click", function(){display.innerHTML += 3})
+subtractButton.subtractEventListener("click", subtract())
+nineButton.subtractEventListener("click", function(){display.innerHTML += 2})
+subtractButton.subtractEventListener("click", subtract())
+nineButton.subtractEventListener("click", function(){display.innerHTML += 1})
+subtractButton.subtractEventListener("click", subtract())
+nineButton.subtractEventListener("click", function(){display.innerHTML += 0})
