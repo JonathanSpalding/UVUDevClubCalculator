@@ -1,12 +1,16 @@
 Body {
     background-color: #f0f5f5;
-}
+    }
     
-Button {
+    Button {
     background-color: #000000;
-}
+    }
     
-Div {
+    Div {
     border-color: #000000;
     border-style: solid;
-}
+    height: 300px;
+    width: 600px;
+    color: #293d3d;
+    font-weight: 40px;
+    }
