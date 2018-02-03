@@ -2,6 +2,7 @@ Body {
     background-color: #f0f5f5;
     width: 500px;
     margin: 4% auto;
+    font-family: sans-serif;
     letter-spacing: 5px;
     font-size: 1.8rem;
 }
@@ -13,6 +14,7 @@ button {
     cursor: pointer;
     background-color: #f9f9f9;
 }
+
 /*
 Div {
 border-color: #000000;
@@ -25,6 +27,7 @@ font-weight: 40px;
 */
 .calculator {
     padding: 20px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     border-radius: 1px;
 }
 
@@ -64,6 +67,8 @@ font-weight: 40px;
 .operators div:active {
     font-weight: bold;
 }
+
+
 
 button:hover {
     background-color: #f1f1f1;
