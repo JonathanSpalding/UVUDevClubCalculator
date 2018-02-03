@@ -1,14 +1,23 @@
-
-
-
 Body {
 background-color: #f0f5f5;
+width: 500px;
+    margin: 4% auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
-
-Button {
-background-color: #9c9c9c;
+button {
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color: #f9f9f9;
 }
-
+/*
 Div {
 border-color: #000000;
 border-style: solid;
@@ -16,4 +25,74 @@ height: 300px;
 width: 600px;
 color: #293d3d;
 font-weight: 40px;
+}
+*/
+.calculator {
+    padding: 20px;
+    border-radius: 1px;
+}
+
+#display {
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+}
+
+#display:hover {
+    border: 1px solid #bbb;
+}
+
+.operators div {
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0;
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.operators div:hover {
+    background-color: #ddd;
+    border-color: #aaa;
+}
+
+.operators div:active {
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+    border-color: #bbb;
+}
+
+button:active {
+    font-weight: bold;
+}
+
+#equalbutton {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 50%;
+    margin: 10px 6px 10px 0;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #4d90fe;
+}
+
+#equalbutton:hover {
+    background-color: #307CF9;
+    border-color: #1857BB;
+}
+
+#equalbutton:active {
+    font-weight: bold;
 }
