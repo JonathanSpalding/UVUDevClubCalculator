@@ -1,9 +1,3 @@
-
-
-
-
-
-
 function add(a,b){return a + b}
 function subtract(a,b){return a - b}
 function multiply(a,b){return a * b}
@@ -22,26 +16,26 @@ var threeButton = document.getElementById("threebutton");
 var twoButton = document.getElementById("twobutton");
 var oneButton = document.getElementById("onebutton");
 var zeroButton = document.getElementById("zerobutton");
-addButton.addEventListener("click", add());
-subtractButton.addEventListener("click", subtract());
-multiplyButton.addEventListener("click", multiply());
-divideButton.addEventListener("click", divide());
+addButton.addEventListener("click", add);
+subtractButton.addEventListener("click", subtract);
+multiplyButton.addEventListener("click", multiply);
+divideButton.addEventListener("click", divide);
 nineButton.addEventListener("click", function(){display.innerHTML += 9});
 subtractButton.addEventListener("click", subtract());
 nineButton.addEventListener("click", function(){display.innerHTML += 8});
-subtractButton.addEventListener("click", subtract());
+subtractButton.addEventListener("click", subtract);
 nineButton.addEventListener("click", function(){display.innerHTML += 7});
-subtractButton.addEventListener("click", subtract());
+subtractButton.addEventListener("click", subtract);
 nineButton.addEventListener("click", function(){display.innerHTML += 6});
-subtractButton.addEventListener("click", subtract());
+subtractButton.addEventListener("click", subtract);
 nineButton.addEventListener("click", function(){display.innerHTML += 5});
-subtractButton.addEventListener("click", subtract());
+subtractButton.addEventListener("click", subtract);
 nineButton.addEventListener("click", function(){display.innerHTML += 4});
-subtractButton.addEventListener("click", subtract());
+subtractButton.addEventListener("click", subtract);
 nineButton.addEventListener("click", function(){display.innerHTML += 3});
-subtractButton.addEventListener("click", subtract());
+subtractButton.addEventListener("click", subtract);
 nineButton.addEventListener("click", function(){display.innerHTML += 2});
-subtractButton.addEventListener("click", subtract());
+subtractButton.addEventListener("click", subtract);
 nineButton.addEventListener("click", function(){display.innerHTML += 1});
-subtractButton.addEventListener("click", subtract());
+subtractButton.addEventListener("click", subtract);
 nineButton.addEventListener("click", function(){display.innerHTML += 0});
