@@ -1,3 +1,39 @@
+var inputLabel = document.getElementById('inputLabel');
+ 
+function pushBtn(obj) 
+{
+    var pushed = obj.innerHTML;
+     
+    if (pushed == '=')
+    {
+        // Calculate
+        inputLabel.innerHTML = eval(inputLabel.innerHTML);
+         
+    }
+     else if (pushed == 'AC')
+    {
+        // All Clear
+        inputLabel.innerHTML = '0';
+         
+    } 
+    else 
+    {
+        if (inputLabel.innerHTML == '0')
+         {
+            inputLabel.innerHTML = pushed;
+             
+         }
+        else 
+        {
+            inputLabel.innerHTML += pushed;
+             
+        }
+    }
+}
+
+
+//Orignal js code
+/*
 function add(a,b){return a + b}
 function subtract(a,b){return a - b}
 function multiply(a,b){return a * b}
@@ -30,3 +66,4 @@ nineButton.addEventListener("click", function(){display.innerHTML += 3});
 nineButton.addEventListener("click", function(){display.innerHTML += 2});
 nineButton.addEventListener("click", function(){display.innerHTML += 1});
 nineButton.addEventListener("click", function(){display.innerHTML += 0});
+*/
