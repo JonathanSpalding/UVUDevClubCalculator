@@ -73,7 +73,10 @@ font-weight: 40px;
     font-weight: bold;
 }
 
-
+h5
+{
+	text-align: center;	
+}
 
 button:hover {
     background-color: #f1f1f1;
