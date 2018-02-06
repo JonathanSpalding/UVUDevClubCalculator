@@ -1,43 +1,49 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
 <div class="calculator">
-    <table border="1" cellspacing="0">
+    <table border="0" cellspacing="0">
         <tr>
-            <td colspan="4" id="inputLabel">0</td>
+            <td colspan="4" ><div id="inputLabel" class="display">0</div></td>
         </tr>
         <tr>
-            <td colspan="3"><button onclick="pushBtn(this);">AC</button></td>
-            <td><button onclick="pushBtn(this);">/</button></td>
+            <td><button class="operator" onclick="pushBtn(this);">(</button></td>
+            <td><button class="operator" onclick="pushBtn(this);">)</button></td>
+            <td><button class="operator" onclick="pushBtn(this);">%</button></td>
+            <td><button class="operator" onclick="pushBtn(this);">AC</button></td>
+            
         </tr>
         <tr>
             <td><button onclick="pushBtn(this);">7</button></td>
             <td><button onclick="pushBtn(this);">8</button></td>
             <td><button onclick="pushBtn(this);">9</button></td>
-            <td><button onclick="pushBtn(this);">*</button></td>
+            <td><button class="operator" onclick="pushBtn(this);">/</button></td>
+            
         </tr>
         <tr>
             <td><button onclick="pushBtn(this);">4</button></td>
             <td><button onclick="pushBtn(this);">5</button></td>
             <td><button onclick="pushBtn(this);">6</button></td>
-            <td><button onclick="pushBtn(this);">-</button></td>
+            <td><button class="operator" onclick="pushBtn(this);">*</button></td>
         </tr>
         <tr>
             <td><button onclick="pushBtn(this);">1</button></td>
             <td><button onclick="pushBtn(this);">2</button></td>
             <td><button onclick="pushBtn(this);">3</button></td>
-            <td><button onclick="pushBtn(this);">+</button></td>
+            <td><button class="operator" onclick="pushBtn(this);">-</button></td>
+            
         </tr>
         <tr>
-            <td colspan="2"><button onclick="pushBtn(this);">0</button></td>
+            <td><button onclick="pushBtn(this);">0</button></td>
             <td><button onclick="pushBtn(this);">.</button></td>
-            <td><button onclick="pushBtn(this);">=</button></td>
+            <td><button id="equalbutton" onclick="pushBtn(this);">=</button></td>
+            <td><button class="operator" onclick="pushBtn(this);">+</button></td>
         </tr>
     </table>
 </div>
-    <script src="/app/app.js"></script>
+    <script src="app/app.js"></script>
 </body>
 </html>
