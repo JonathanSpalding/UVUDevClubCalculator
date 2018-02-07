@@ -53,11 +53,12 @@ $(document).keydown(function(e)
         }
         if (count == 10) 
         {
+
             reset();
             // Alert message
             alert('Kanomi Code Activated');
-            //Change the back ground color to a random color using the random color function
-            $('body').css('background-color', getRandomColor);
+            //runs the KanomiCode function, to change background color, and angle. 
+            kanomiFunction();
         }
     } else 
     {
@@ -76,4 +77,26 @@ function getRandomColor ()
 {
   var hex = Math.floor(Math.random() * 0xFFFFFF);
   return "#" + ("000000" + hex.toString(16)).substr(-6);
+}
+
+//counter to see how many time the function was run
+var kanomiCounter = 0;
+
+//Kanomi code fuction that if run multiple times user gets an extra suprise. 
+function kanomiFunction()
+{
+	if(kanomiCounter >= 2)
+	{
+		$('.calculator').css('transform', 'rotate(30deg)');
+	}
+	if(kanomiCounter >= 4)
+	{
+		$('.calculator').css('transform', 'rotate(0deg)');
+		kanomiCounter = 0;
+	}
+	else
+	{
+		kanomiCounter++;
+		$('body').css('background-color', getRandomColor);
+	}
 }
